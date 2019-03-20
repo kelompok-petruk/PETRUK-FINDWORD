@@ -27,5 +27,14 @@ void callfindword(){
   }
 }
 
+int longOf (char *word){
+  int x ;
+  for (int i = 0; *(word+i); i++ {
+    x = i ;
+    return x;
+  }
+    
+  
+
                
   
