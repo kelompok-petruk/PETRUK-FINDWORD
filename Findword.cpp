@@ -33,7 +33,23 @@ int longOf (char *word){
     x = i ;
     return x;
   }
-    
+    Void doSearch (char * (word)){
+      int banyak =0;
+      for (int pb=0;pb<15;pb++){
+        for (int pk=0;pk<15;pk++){
+          int ada[8] = {0,0,0,0,0,0,0,0};
+          if (*(*findword+pb) == * (word+0)){
+            for(int i=1;i<=longof(wprd);i++){
+              if (pb<(15-longof(word)))
+                if (*(*(findword+(pb+i))+pk) == *(word+i)) ada[0]++;
+              if (pb>==(0+longof(word)))
+                if (*(*(findword+pb-i))+pk) == *(word+i)) ada[1]++;
+              if (pk<(15-longof(word)))
+                if (*(*(findword+pb)+(pk-i)) == *(word+i)) ada[2]++;
+              if (pk >=(0+longof(word)))
+                if (*(*(findword+pb)+(pk-i) == *(word+i)) ada[3]++;
+                    
+                    
   
 
                
