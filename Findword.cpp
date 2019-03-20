@@ -48,6 +48,35 @@ int longOf (char *word){
                 if (*(*(findword+pb)+(pk-i)) == *(word+i)) ada[2]++;
               if (pk >=(0+longof(word)))
                 if (*(*(findword+pb)+(pk-i) == *(word+i)) ada[3]++;
+                    if (pb <(15-longof(word)) && pk < (15-longof(word)))
+                    if (*(*findword+(pb+i))+(pk+i) == *(word+i)) ada[4]++;
+                    
+                    if (pb <(15-longof(word)) && pk >= (0+longof(word)))
+                    if(*(*(findword+(pb+i))+(pk-i)) == *(word+i)) ada[5]++;
+                    
+                    if (pb >=(0+longof(word)) && pk < (15-longof(word)))
+                    if(*(*(findword+(pb-i))+(pk+i)) == *(word+i) ada[6]++;
+                         
+                         if (pb >=(0+longof(word)) && pk >=(0+longof(word)))
+                         if (*(*(findword+(pb-i))+(pk-i)) == *(word+i)) ada[7]++;
+                       }
+                       
+                       if (longof(word)) == 0) {
+                          banyak++;
+                    }
+                    
+                    else {
+                      for(int 1=0;1<0;1++) {
+                          if (ada[1] == longof(word)) banyak++;
+                      }
+                   }
+               }
+           }
+       }
+                    
+        if (banyak !=0) cout<<"ada\n";
+           else cout<<"tidak\n";
+  }
                     
                     
   
