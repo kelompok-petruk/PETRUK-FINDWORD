@@ -77,7 +77,23 @@ int longOf (char *word){
         if (banyak !=0) cout<<"ada\n";
            else cout<<"tidak\n";
   }
-                    
+ int main () {
+   callfindword();
+   int kata;
+   cout<<endl;
+   cout<<"masukkan jumlah kata yang ingin dicari : ";
+   cin>>kata;
+   char word[kata][15];
+   for (int i=0;i<kata;i++){
+     cin>>word[i];
+     longOf(*(word+i));
+   }
+   
+   for (int i=0;i<kata;i++){
+     toUpper(*(word+i));
+     doSearch(*(word+i));
+   }
+ }
                     
   
 
