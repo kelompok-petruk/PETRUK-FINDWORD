@@ -26,48 +26,60 @@ void callfindword(){
     cout<<endl;
   }
 }
+void toUpper( char * word ){
+  int x='A'-'a';
+  if(x<0)x*=-1;
+  
+  for (int i=0; *(word+i);i++){
+    if('A'<'a'){
+      if(*(word+i)>= 'a') *(word+i)-=x;}
+    else{
+      if (*(word+i)<= 'A')*(word+i)+=x;}
+  }
+}
 
 int longOf (char *word){
   int x ;
-  for (int i = 0; *(word+i); i++ {
+  for (int i = 0; *(word+i); i++ ){
     x = i ;
+  }
     return x;
   }
-    Void doSearch (char * (word)){
+    void doSearch (char * (word)){
       int banyak =0;
       for (int pb=0;pb<15;pb++){
         for (int pk=0;pk<15;pk++){
           int ada[8] = {0,0,0,0,0,0,0,0};
           if (*(*findword+pb) == * (word+0)){
-            for(int i=1;i<=longof(wprd);i++){
-              if (pb<(15-longof(word)))
+            for(int i=1;i<=longOf(word);i++){
+              if (pb<(15-longOf(word)))
                 if (*(*(findword+(pb+i))+pk) == *(word+i)) ada[0]++;
-              if (pb>==(0+longof(word)))
-                if (*(*(findword+pb-i))+pk) == *(word+i)) ada[1]++;
-              if (pk<(15-longof(word)))
-                if (*(*(findword+pb)+(pk-i)) == *(word+i)) ada[2]++;
-              if (pk >=(0+longof(word)))
-                if (*(*(findword+pb)+(pk-i) == *(word+i)) ada[3]++;
-                    if (pb <(15-longof(word)) && pk < (15-longof(word)))
+              if (pb>=(0+longOf(word)))
+                if (*(*(findword+(pb-i))+pk) == *(word+i)) ada[1]++;
+              if (pk<(15-longOf(word)))
+                if (*(*(findword+pb)+(pk+i)) == *(word+i)) ada[2]++;
+              if (pk >=(0+longOf(word)))
+                if (*(*(findword+pb)+(pk-i)) == *(word+i)) ada[3]++;
+                    if (pb <(15-longOf(word)) && pk < (15-longOf(word)))
                     if (*(*findword+(pb+i))+(pk+i) == *(word+i)) ada[4]++;
                     
-                    if (pb <(15-longof(word)) && pk >= (0+longof(word)))
+                    if (pb <(15-longOf(word)) && pk >= (0+longOf(word)))
                     if(*(*(findword+(pb+i))+(pk-i)) == *(word+i)) ada[5]++;
                     
-                    if (pb >=(0+longof(word)) && pk < (15-longof(word)))
-                    if(*(*(findword+(pb-i))+(pk+i)) == *(word+i) ada[6]++;
+                    if (pb >=(0+longOf(word)) && pk < (15-longOf(word)))
+                    if(*(*(findword+(pb-i))+(pk+i)) == *(word+i)) ada[6]++;
                          
-                         if (pb >=(0+longof(word)) && pk >=(0+longof(word)))
+                         if (pb >=(0+longOf(word)) && pk >=(0+longOf(word)))
                          if (*(*(findword+(pb-i))+(pk-i)) == *(word+i)) ada[7]++;
                        }
                        
-                       if (longof(word)) == 0) {
+                       if (longOf(word) == 0) {
                           banyak++;
                     }
                     
                     else {
-                      for(int 1=0;1<0;1++) {
-                          if (ada[1] == longof(word)) banyak++;
+                      for(int l=0;l<8;l++) {
+                          if (ada[l] == longOf(word)) banyak++;
                       }
                    }
                }
